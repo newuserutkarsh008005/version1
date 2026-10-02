@@ -115,7 +115,7 @@ app.post("/chat", async (req, res) => {
         { role: "system", content: SYSTEM_PROMPT },
         { role: "user", content: message },
       ],
-      model: "llama-3.3-70b-versatile",
+      model: "openai/gpt-oss-120b",
       temperature: 0.4,
       max_tokens: 400,
     });
